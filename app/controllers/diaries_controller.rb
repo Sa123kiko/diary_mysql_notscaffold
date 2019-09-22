@@ -4,6 +4,8 @@ class DiariesController < ApplicationController
     @diaries = Diary.find(params[:id])
   end
 
-
+  def index
+    @diaries = Diary.all
+  end
 
 end
